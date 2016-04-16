@@ -32,7 +32,7 @@ using namespace gr;
 int main(int argc, char **argv)
 {
     bool debug = true;
-    bool reliable = true;
+    const std::vector<int> reliable(1, 1);
     std::string addr_mode("explicit");
     std::string addr_src("tun0");
     int ack_timeout = 100;

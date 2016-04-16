@@ -46,7 +46,7 @@ namespace gr {
        * class. gdtp::gdtp_wrapper::make is the public interface for
        * creating new instances.
        */
-      static sptr make(bool debug, uint64_t src_addr, uint64_t dest_addr, bool reliable, std::string addr_mode, std::string addr_src, int ack_timeout, int max_retry, int max_seq_no, std::string scheduler);
+      static sptr make(bool debug, uint64_t src_addr, uint64_t dest_addr,  const std::vector<int> &reliable, std::string addr_mode, std::string addr_src, int ack_timeout, int max_retry, int max_seq_no, std::string scheduler, int num_flows=1);
     };
 
   } // namespace gdtp

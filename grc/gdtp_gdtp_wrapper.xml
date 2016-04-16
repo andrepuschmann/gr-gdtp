@@ -4,7 +4,7 @@
   <key>gdtp_gdtp_wrapper</key>
   <category>gdtp</category>
   <import>import gdtp</import>
-  <make>gdtp.gdtp_wrapper($debug, $src_addr, $dest_addr, $reliable, $addr_mode, $addr_source, $ack_timeout, $max_retry, $max_seq_no, $scheduler)</make>
+  <make>gdtp.gdtp_wrapper($debug, $src_addr, $dest_addr, $reliable, $addr_mode, $addr_source, $ack_timeout, $max_retry, $max_seq_no, $scheduler, $num_flows)</make>
   
   <param>
     <name>Debug</name>
@@ -39,17 +39,8 @@
   <param>
     <name>Reliable</name>
     <key>reliable</key>
-    <value>False</value>
-    <type>bool</type>
-
-    <option>
-      <name>Enable</name>
-      <key>True</key>
-    </option>
-    <option>
-      <name>Disable</name>
-      <key>False</key>
-    </option>
+    <value>[0]</value>
+    <type>int_vector</type>
   </param>    
   
   <param>
